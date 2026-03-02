@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mazur & Co. Consulting Group LLC</title>
+  <meta name="description" content="AI-powered employee scheduling for Chick-fil-A: demand-aware staffing, faster scheduling, happier teams." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img class="brand-logo" src="logo.png" alt="Mazur & Co. Logo" />
+        <div class="brand-text">
+          <div class="brand-name">Mazur &amp; Co.</div>
+          <div class="brand-tag">Consulting Group LLC</div>
+        </div>
+      </a>
+
+      <nav class="links">
+        <a href="#problem">Problem</a>
+        <a href="#solution">AI Solution</a>
+        <a href="#how">How it works</a>
+        <a href="#kpi">KPIs</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Client: Chick-fil-A • Focus: Employee Scheduling</p>
+          <h1>Demand-aware scheduling that saves managers time and improves coverage.</h1>
+          <p class="lead">
+            Traditional scheduling is manual, time-consuming, and often doesn’t react to demand shifts across the week.
+            We built an AI scheduling system that assigns employees based on availability and projected hourly demand.
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#prototype">View Prototype</a>
+            <a class="btn outline" href="#solution">See the Solution</a>
+          </div>
+
+          <div class="pill-row">
+            <span class="pill">Forecast-driven staffing</span>
+            <span class="pill">Availability-safe assignments</span>
+            <span class="pill">TSV → Excel output</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Project outcome</h3>
+          <ul>
+            <li><strong>Optimized coverage</strong> during lunch/dinner peaks</li>
+            <li><strong>Reduced manager time</strong> spent building schedules</li>
+            <li><strong>Fewer gaps/overstaffing</strong> across operating hours</li>
+            <li><strong>Improved reliability</strong> and employee satisfaction</li>
+          </ul>
+          <p class="note">Built by Mazur &amp; Co. for MGMT 382.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem" class="section">
+      <div class="container">
+        <h2>The bottleneck</h2>
+        <div class="grid2">
+          <div class="panel">
+            <h3>Scheduling is hard to balance</h3>
+            <p>
+              Scheduling managers juggle employee availability, peak business hours, and overtime limits.
+              Because the process is mostly manual, it often relies on judgment and takes significant time to complete.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Demand changes hour-by-hour</h3>
+            <p>
+              Chick-fil-A traffic varies heavily by day and time — especially during lunch and dinner rushes.
+              Fixed shift structures can create coverage gaps during busy periods and overstaffing during slow hours,
+              reducing service speed and increasing labor cost.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution" class="section alt">
+      <div class="container">
+        <h2>AI solution</h2>
+        <p class="lead compact">
+          Our system replaces the “copy-paste schedule” approach with automated scheduling that reacts to projected demand.
+          It generates a weekly schedule and a KPI summary report — without managers manually assigning every shift.
+        </p>
+
+        <div class="grid3">
+          <div class="panel">
+            <h3>Optimization</h3>
+            <p>Matches staffing levels to forecasted demand by hour to reduce gaps and unnecessary labor spend.</p>
+          </div>
+          <div class="panel">
+            <h3>Time commitment</h3>
+            <p>Automates shift assignments using availability + eligibility so managers spend less time scheduling.</p>
+          </div>
+          <div class="panel">
+            <h3>Employee experience</h3>
+            <p>Reduces scheduling errors (like assigning unavailable staff) and increases schedule reliability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <h2>How it works</h2>
+
+        <div class="panel">
+          <h3>Inputs → AI pipeline → Outputs</h3>
+          <div class="grid2">
+            <div>
+              <h4 class="mini">Inputs</h4>
+              <ul class="bullets">
+                <li><strong>Hourly sales forecast</strong> (transactions / demand by hour)</li>
+                <li><strong>Employee roster</strong> (FOH/BOH, eligibility)</li>
+                <li><strong>Employee availability</strong> (who can work when)</li>
+                <li><strong>Shift catalog</strong> (shift types the system can assign)</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="mini">Outputs</h4>
+              <ul class="bullets">
+                <li><strong>Weekly schedule file</strong> (.TSV, convertible to Excel)</li>
+                <li><strong>Summary report</strong> describing staffing + key KPIs</li>
+              </ul>
+              <p class="note">
+                Schedule fields include: day, date, shift type, start time, end time, employee ID, employee name.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="panel">
+            <h3>Stage 1</h3>
+            <p>Translate hourly forecast into staffing needs (more transactions → more shift slots).</p>
+          </div>
+          <div class="panel">
+            <h3>Stage 2</h3>
+            <p>Filter eligible employees by department and availability (no one is scheduled when unavailable).</p>
+          </div>
+          <div class="panel">
+            <h3>Stage 3</h3>
+            <p>Assign shifts from the shift catalog and generate a clean schedule + KPI summary report.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kpi" class="section alt">
+      <div class="container">
+        <h2>KPIs we track</h2>
+        <div class="grid3">
+          <div class="panel">
+            <h3>Coverage rate</h3>
+            <p>Percent of hours meeting recommended staffing levels based on forecasted demand.</p>
+          </div>
+          <div class="panel">
+            <h3>Schedule build time</h3>
+            <p>Estimated manager time saved compared to manual scheduling.</p>
+          </div>
+          <div class="panel">
+            <h3>Availability compliance</h3>
+            <p>Percent of assigned shifts that match stated availability (goal: 100%).</p>
+          </div>
+        </div>
+        <p class="note">Optional add-ons: overtime risk, labor cost per transaction, peak-hour service impact.</p>
+      </div>
+    </section>
+
+    <section id="prototype" class="section">
+      <div class="container">
+        <h2>Prototype</h2>
+        <div class="panel">
+          <p>
+            Dify workflow link:
+            <span class="mono">https://udify.app/workflow/4Va1yOvbCnDuJC43</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="container">
+        <h2>Team</h2>
+        <div class="grid3">
+          <div class="panel"><h3>Tara Hassanzadeh</h3></div>
+          <div class="panel"><h3>Chase Perlmutter</h3></div>
+          <div class="panel"><h3>Jacob Youngworth</h3></div>
+          <div class="panel"><h3>Victoria Bono</h3></div>
+          <div class="panel"><h3>Kaosi Ogbuefi</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Team: Mazur &amp; Co. Consulting Group LLC • Purdue MGMT 382</p>
+        <div class="grid2">
+          <div class="panel">
+            <h3>Get in touch</h3>
+            <p>Email: <span class="mono">Mazurco@gmail.com</span></p>
+          </div>
+          <form class="panel contact" onsubmit="return false;">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Message
+              <textarea placeholder="What part of scheduling is the biggest pain point?"></textarea>
+            </label>
+            <button class="btn" type="submit">Send (demo)</button>
+            <p class="note">Static demo form (no backend needed).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mazur &amp; Co. Consulting Group LLC</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
